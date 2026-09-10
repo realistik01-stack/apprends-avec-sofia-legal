@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>École à la maison — ta feuille de route (Québec)</title>
+<style>
+  :root { --bleu:#3d7ea6; --vert:#4CAF7D; --jaune:#FFC93C; --corail:#FF6F59; --violet:#9B72CF; --encre:#243b53; --doux:#627d98; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 18px 16px 40px; color: var(--encre); line-height: 1.55; background:#FBFCFE; }
+
+  h1 { font-size: 1.5rem; margin: 4px 0 2px; }
+  .sous { color: var(--doux); font-size: .88rem; margin-bottom: 18px; }
+
+  /* --- Carte d'intro --- */
+  .intro { background: linear-gradient(135deg,#eaf6ff,#eef7e3); border-radius: 16px; padding: 14px 16px; font-size: .95rem; margin-bottom: 22px; }
+  .intro b { color: var(--bleu); }
+
+  /* --- Chronologie --- */
+  .tl { position: relative; margin-left: 8px; padding-left: 34px; }
+  .tl::before { content:""; position:absolute; left:11px; top:6px; bottom:6px; width:3px; background:#e3ebf3; border-radius:3px; }
+  .step { position: relative; margin-bottom: 16px; background:white; border-radius: 14px; padding: 12px 14px; box-shadow: 0 2px 8px rgba(36,59,83,.07); border-left: 5px solid var(--bleu); }
+  .step::before { content: attr(data-n); position:absolute; left:-32px; top:12px; width:26px; height:26px; border-radius:50%; background:var(--bleu); color:white; font-weight:700; font-size:.85rem; display:flex; align-items:center; justify-content:center; }
+  .step h3 { margin: 0 0 4px; font-size: 1rem; }
+  .when { display:inline-block; background:var(--jaune); color:#5a4400; font-weight:700; font-size:.8rem; padding:3px 10px; border-radius:999px; margin-bottom:6px; }
+  .step p { margin: 0; font-size: .9rem; color:#33475b; }
+  .step ul { margin: 6px 0 0; padding-left: 18px; font-size:.88rem; color:#33475b; }
+  .step li { margin-bottom: 2px; }
+
+  .s1 { border-left-color:#4CAF7D; } .s1::before { background:#4CAF7D; }
+  .s2 { border-left-color:#3d7ea6; } .s2::before { background:#3d7ea6; }
+  .s3 { border-left-color:#9B72CF; } .s3::before { background:#9B72CF; }
+  .s4 { border-left-color:#FF9F45; } .s4::before { background:#FF9F45; }
+  .s5 { border-left-color:#FF6F59; } .s5::before { background:#FF6F59; }
+  .s6 { border-left-color:#249197; } .s6::before { background:#249197; }
+  .s7 { border-left-color:#b07d00; } .s7::before { background:#b07d00; }
+
+  /* --- Comparaison 2 options --- */
+  .opts { display:grid; grid-template-columns:1fr; gap:12px; margin: 10px 0 22px; }
+  @media(min-width:560px){ .opts { grid-template-columns:1fr 1fr; } }
+  .opt { border:2px solid #dbe6ef; border-radius:14px; padding:12px 14px; background:white; }
+  .opt .tag { font-weight:800; font-size:.82rem; color:var(--doux); letter-spacing:.03em; }
+  .opt h4 { margin: 4px 0 6px; font-size: .98rem; }
+  .opt p { margin:0; font-size:.87rem; color:#33475b; }
+
+  /* --- Bloc "à faire" --- */
+  .box { border-radius:16px; padding: 14px 16px; margin: 18px 0; font-size:.93rem; }
+  .box.warn { background:#FFF3D6; border:1px solid #F0D48A; }
+  .box.info { background:#EAF6EE; border:1px solid #bfe3cd; }
+  .box a { color:#0b6e99; font-weight:700; }
+
+  h2 { font-size: 1.12rem; margin: 26px 0 8px; }
+  .kv { background:white; border-radius:14px; padding:12px 14px; box-shadow:0 2px 8px rgba(36,59,83,.06); font-size:.88rem; }
+  .kv div { padding:5px 0; border-bottom:1px dashed #e3ebf3; }
+  .kv div:last-child { border-bottom:none; }
+  .liens a { display:inline-block; margin:3px 0; }
+</style>
+</head>
+<body>
+
+<h1>🏠 École à la maison — ta feuille de route</h1>
+<p class="sous">Québec · Loi sur l'instruction publique, art. 15 · Règlement I-13.3, r. 6.01</p>
+
+<div class="intro">
+  <b>L'idée en une phrase :</b> ton enfant est <b>dispensé de l'école</b> s'il reçoit à la maison un <b>enseignement approprié</b> — et tu le prouves en suivant <b>7 étapes</b> dans l'année. Rien de plus.
+</div>
+
+<h2>📅 Tes 7 étapes de l'année</h2>
+<div class="tl">
+
+  <div class="step s1" data-n="1">
+    <span class="when">AVANT LE 1er JUILLET</span>
+    <h3>Avis de déclaration annuelle</h3>
+    <p>Tu préviens le ministère (formulaire en ligne). Il transmet automatiquement à ton centre de services scolaire (CSS).</p>
+    <ul>
+      <li>Nom, date de naissance, adresse de l'enfant</li>
+      <li>Coordonnées des 2 parents (accord de l'autre parent requis)</li>
+      <li>CSS de rattachement + code permanent</li>
+    </ul>
+  </div>
+
+  <div class="step s2" data-n="2">
+    <span class="when">AVANT LE 30 SEPTEMBRE</span>
+    <h3>Projet d'apprentissage</h3>
+    <p>Tu décris comment tu vas instruire ton enfant. C'est ici que tu déclares <b>cette application</b> comme ressource.</p>
+    <ul>
+      <li>Approche éducative + activités</li>
+      <li>Ressources utilisées (dont l'app)</li>
+      <li>Temps prévu + modalités d'évaluation</li>
+    </ul>
+  </div>
+
+  <div class="step s3" data-n="3">
+    <span class="when">DÈS LE 30 SEPTEMBRE</span>
+    <h3>Mise en œuvre</h3>
+    <p>Tu commences. L'app sert ici au quotidien : activités courtes, bilans, suivi.</p>
+  </div>
+
+  <div class="step s4" data-n="4">
+    <span class="when">ENTRE LE 3e ET LE 5e MOIS</span>
+    <h3>État de la situation</h3>
+    <p>Court rapport écrit : ce qui a été fait par matière, le temps alloué, les ajustements.</p>
+  </div>
+
+  <div class="step s5" data-n="5">
+    <span class="when">EN COURS D'ANNÉE</span>
+    <h3>Rencontre de suivi</h3>
+    <p>Le ministère te convoque (avis ≥ 15 jours avant). <b>Ton enfant y participe.</b> Tu peux être accompagné.</p>
+  </div>
+
+  <div class="step s6" data-n="6">
+    <span class="when">2 FOIS · MI-PARCOURS ET FIN</span>
+    <h3>Deux bilans de progression</h3>
+    <p>Tu commentes les progrès de ton enfant par rapport aux attentes du programme.</p>
+    <ul><li>1er cycle (1re-2e) : pas d'évaluation formelle en univers social ni en science — des commentaires suffisent</li></ul>
+  </div>
+
+  <div class="step s7" data-n="7">
+    <span class="when">UNE FOIS PAR ANNÉE</span>
+    <h3>Évaluation + épreuves ministérielles</h3>
+    <p>Tu choisis <b>un</b> mode d'évaluation parmi 5 :</p>
+    <ul>
+      <li>Ton CSS · un établissement privé · une personne autorisée à enseigner</li>
+      <li>Une épreuve ministérielle · un portfolio</li>
+    </ul>
+    <p style="margin-top:6px;"><b>⚠️ Attention :</b> ton enfant <b>doit</b> passer les épreuves du ministère — <b>4e année : français</b> (lecture + écriture) · <b>6e année : français + mathématique</b>. Inscription gratuite au CSS.</p>
+  </div>
+
+</div>
+
+<h2>🔀 Deux façons de faire ton projet</h2>
+<div class="opts">
+  <div class="opt">
+    <div class="tag">OPTION 1</div>
+    <h4>Suivre les programmes du ministère</h4>
+    <p>Tu appliques les programmes d'études du MEQ + les domaines généraux de formation + les épreuves imposées par ton CSS.</p>
+  </div>
+  <div class="opt">
+    <div class="tag">OPTION 2</div>
+    <h4>Ensemble de connaissances variées</h4>
+    <p>Tu appliques les programmes officiels dans <b>au moins</b> : langue d'enseignement · langue seconde · mathématique · science et technologie · univers social. <b>← c'est ce que couvre l'app.</b></p>
+  </div>
+</div>
+
+<div class="box info">
+  <b>✅ L'app t'aide où ça compte :</b> progression par matière et par année, bilans avec scores, export de sauvegarde (JSON) à joindre à tes documents. Tu gardes une trace concrète de ce qui a été fait.
+</div>
+
+<div class="box warn">
+  <b>⚠️ À vérifier chaque année :</b> les exigences exactes peuvent varier selon ton centre de services scolaire. Reconfirme directement auprès de ton CSS. L'app est un <b>outil</b> : elle ne remplace ni la déclaration, ni le projet, ni les bilans, ni les rencontres, ni les épreuves.
+</div>
+
+<h2>🔗 Faire ta déclaration (site officiel)</h2>
+<div class="kv liens">
+  <div>👉 <a href="https://www.quebec.ca/education/prescolaire-primaire-et-secondaire/programmes-formations-evaluation/enseignement-maison/espace-securise">Espace sécurisé — avis de déclaration, projet d'apprentissage (quebec.ca)</a></div>
+  <div>📖 <a href="https://www.quebec.ca/education/prescolaire-primaire-et-secondaire/programmes-formations-evaluation/enseignement-maison/demarche-etapes">Démarche et étapes complètes (quebec.ca)</a></div>
+  <div>⚖️ <a href="https://www.legisquebec.gouv.qc.ca/fr/document/lc/I-13.3">Loi sur l'instruction publique (legisquebec)</a></div>
+  <div>📄 <a href="https://www.legisquebec.gouv.qc.ca/fr/showdoc/cr/i-13.3,%20r.%206.01">Règlement sur l'enseignement à la maison (legisquebec)</a></div>
+  <div>🎓 <a href="https://www.quebec.ca/education/prescolaire-primaire-et-secondaire/programmes-formations-evaluation/epreuves-ministerielles-evaluation-apprentissages/epreuves-ministerielles">Épreuves ministérielles (quebec.ca)</a></div>
+</div>
+
+</body>
+</html>
